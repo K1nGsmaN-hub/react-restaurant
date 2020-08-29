@@ -11,10 +11,10 @@ const AppHeader = ({total}) => {
             <Link className="header__link" to={'/'}>
                 Menu
             </Link>
-            <a className="header__link" to="/cart">
+            <Link className="header__link" to="/cart">
                 <img className="header__cart" src={cartIcon} alt="cart"></img>
                 Total: {total} $
-            </a>
+            </Link>
         </header>
     )
 };
