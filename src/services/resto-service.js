@@ -4,7 +4,7 @@ export default class RestoService {
     if (!res.ok) {
       throw new Error(`${res.statusText}, ${res.status}`)
     } else {
-      return res
+      return res.json()
     }
   }
 }
